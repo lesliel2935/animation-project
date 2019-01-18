@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <title>title</title>
     <style>
+      /*This is the background set to an image with glitter*/
       #glitter{
-        background: url(glitter1.jpg) no-repeat;
+        /*sets the image to be the background*/
+        background: url(glitter1.jpg) no-repeat; 
+        /*gives extra room to the background*/
         padding: 15px;
+        /*expands the image to cover the whole background*/
         background-size:cover;
         position:relative;
         width:800px;
         height:500px;
         display: inline-block;
-        position: relative;
         text-align: center;
       }
+      /*This is the heading */
       h1{
         text-align:center;
         font-size:40px;
         border: 10px solid ;
+        /*Sets the gradient for the title*/
         background-image: linear-gradient(to right,purple,maroon);
+        /*give the text some 3d look*/
         text-shadow: 5px 5px 10px salmon;
         color:white;
         padding:15px;
@@ -30,50 +36,47 @@
       background-size:cover;
       width:200px;
       height:300px;
-      /*animation:crown 2s ease-in 0s 1 normal;*/
-      /*margin:20px;*/
       display:inline-block;
+      transition: width 2s, height 2s, transform 2s;
+     
        
       }
       
-       #crowm:hover{
-        /*TRANSITIOM*/
+       #crown:hover{
+        /*TRANSITION & TRANSFORM*/
+        width: 200px;
+        height: 300px;
+        transform: rotateY(180deg) ;
       }
-      /*@keyframes crown {*/
-      /*from {right: 300px;}*/
-      /*to {right: 0px;}*/
-      /*}*/
+    
       
       #dress {
       background-image: url(dress.jpg);
       background-size:cover;
       width:200px;
       height:300px;
-      /*animation:dress 2s ease-in 0s 1 normal;*/
-      /*margin:20px;*/
       display:inline-block;
-      /*animation-name: dress;*/
-      /*animation-duration: 4s;*/
+      /*width and height of transition*/
+      transition: width 2s, height 2s;
+      
       }
       
       #dress:hover{
-         /*TRANSITIOM*/
+         /*TRANSITION*/
+      width: 300px;
+      height: 300px;
       }
      
-      /*@keyframes dress {*/
-      /*from {left: 200px;}*/
-      /*to {left: 0px;}*/
-      /*}*/
       
      #pic {
-      z-index: -1;
       background-image: url(pic.JPG);
       width:250px;
       height:300px;
       animation:pic 3s ease-in 0s 1 normal ;
       display:inline-block;
-      /*margin:20px;*/
+      margin:20px;
       }
+      /*Shows tha transparency of the image*/
       @keyframes pic {
       0% {opacity: 0;}
       50% {opacity: 0;}
@@ -84,7 +87,7 @@
   <body>
   <div id="glitter"> 
   <h1>
-    Invitation To My Sweet 15
+    My Sweet 15
   </h1>
   <div id="crown"></div>
   <div id="pic"></div>
